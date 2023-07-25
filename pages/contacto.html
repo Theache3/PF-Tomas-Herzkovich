@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ayun Helados</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/cucurucho-de-helado.png">
+    <title>Grido - contacto</title>
+    <!--BOOTSTRAP CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!--AOS LIBRARY-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--MI CSS-->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body class="bgColorSecundario">
+	<!-- CONTAINER - ROWS - COL-->
+	<div class="container bgColor">
+		<!--LOGO + NAV -->
+		<header class="row">
+			<div class="col-12 col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+				  <div class="container-fluid">
+				    <a class="navbar-brand" href="#"><img src="../assets/img/gridologo.png.png" alt="logo" class="img-fluid" data-aos="fade-down"
+				    data-aos="fade-down"
+				    data-aos-easing="linear"
+				    data-aos-duration="1500"> 
+				    </a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+				      <ul class="navbar-nav fs-5">
+				        <li class="nav-item px-4">
+				          <a class="nav-link" aria-current="page" href="../index.html">home</a>
+				        </li>
+				        <li class="nav-item px-4">
+				          <a class="nav-link" href="quienessomos.html">quiénes somos</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link px-4" href="sabores.html">sabores</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link px-4" href="promos.html">promos</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link px-4" href="#">contacto</a>
+				        </li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>				
+			</div>	
+		</header>
+		<!-- CONTENIDO -->
+
+		<main class="row bgColorSecundario border border-dark pb-3">
+			<div class="col-12 col-lg-12 bgColor">
+				<h1 class="text-center text-white my-3 py-3 fw-bold" data-aos="fade-up"
+                data-aos-duration="3000">Contacto</h1>					
+			</div>
+			<div class="col-12 col-lg-6">
+				<form>
+				  <div class="mb-3">
+				    <label for="Nombre" class="form-label">Nombre</label>
+				    <input type="text" class="form-control" id="Nombre">
+				  </div>	
+				  <div class="mb-3">
+				    <label for="inputEmail" class="form-label">E-mail</label>
+				    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+				    <div id="emailHelp" class="form-text">Nunca compartiremos tu e-mail con nadie.</div>  
+				  </div>
+				  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+					  <option selected>Edad</option>
+					  <option value="1">18-35</option>
+					  <option value="2">36-59</option>
+					  <option value="3">+60</option>
+				  </select>
+				  <div class="mb-3 form-check">
+				    <input type="checkbox" class="form-check-input" id="Check1">
+				    <label class="form-check-label" for="Check1">Deseo recibir información sobre los productos</label>
+				  </div>
+				  <div class="mb-3">
+					  <label for="formControlTextarea" class="form-label">Tu comentario</label>
+					  <textarea class="form-control form-control-lg" id="formControlTextarea" rows="3"></textarea>
+				  </div>
+				  <button type="submit" class="btn  btn-outline-dark btn-primario">Enviar</button>
+				  <button type="reset" class="btn btn-outline-dark btn-secundario">Reestablecer</button>
+
+				</form>	
+			</div>
+			<div class="col-12 col-lg-6 px-4">
+				<p class="mb-2 mt-5">Nuestro local: Av. Córdoba 1820 C.A.B.A.</p>
+			
+		        <iframe class="img-fluid pt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.17267872567!2d-58.395433349221236!3d-34.599794764701585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfeb0b08df%3A0x362b3be522afba04!2sAv.%20C%C3%B3rdoba%201820%2C%20C1120AAN%20CABA!5e0!3m2!1ses-419!2sar!4v1659212746959!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		        </div>
+			</div>
+			
+		</main>
+		<!-- FOOTER -->
+
+		<footer class="row mt-3 pt-3 bgColorSecundario">
+			<div class="col-12 col-lg-6">
+			    <p class="pt-3">Seguinos en: <a href="https://www.facebook.com/"><img src="../assets/img/facebook.png" alt="logo facebook"></a>
+			    <a href="https://www.instagram.com/"><img src="../assets/img/instagram.png" alt="logo instagram"></a></p>
+			</div>
+			<div class="col-12 col-lg-6 pt-3 ">
+				<p>Grido Helados @ 2022 - Todos los derechos reservados</p>
+			</div>
+			
+		</footer>	
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
