@@ -1,0 +1,21 @@
+input, button{
+	transition: 2s;}
+	
+input:focus{
+	font-size: 22px;}
+
+button:hover{
+	font-size: 19px;}
+
+//clase base - extend clase base y modificar
+.btn-primario{
+	background-color: map-get($colores, colorBlanco);
+	border-color: map-get($colores, colorPrimario);
+    font-size: 15px;
+
+}
+
+.btn-secundario{
+	@extend .btn-primario;
+	background-color: map-get($colores, colorSecundario);
+	}

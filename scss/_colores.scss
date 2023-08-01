@@ -1,0 +1,29 @@
+// MAP 
+
+$colores:(
+	colorPrimario: black,
+	colorSecundario: #EED950,
+	colorBlanco: white
+	);
+
+@each $varianteColor, $color in $colores {
+	.#{$varianteColor}{
+		color: $color;
+	}
+}
+
+
+
+.bgColor{
+	background-color: map-get($colores, colorPrimario);
+}
+.bgColorSecundario{
+	  background-color: map-get($colores, colorSecundario);
+	}
+
+a{color: map-get($colores, colorBlanco);}
+
+
+h1{
+	background-color: map-get($colores, colorPrimario);
+}

@@ -1,0 +1,118 @@
+/*FLEXBOX*/
+
+header, ul, footer {display: flex;}
+footer, header{
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+
+/*ESTILOS GENERALES*/
+.text{font-size: 1.3rem;
+      color: map-get($colores, colorBlanco);
+      text-align: justify;
+      padding: 29px;
+      margin: 47px;
+  }
+
+.h1{
+    font-weight: bolder;
+    color: map-get($colores, colorBlanco);
+    @include font($fuenteSecundaria, 2.5rem);
+    text-align: center;
+}      
+
+
+
+/*IMAGEN*/
+.img img{width: 100%;}
+
+
+.imgMain{
+    width: 70%;
+    padding: 10px;
+    margin: 31px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*GRID INDEX*/
+.gridIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+
+/*MEDIA QUERIE 
+MOBILE*/ 
+@media only screen and (max-width: 768px){
+
+  .gridIndex header, footer, ul{
+    flex-direction: column;
+    justify-content: space-around;
+} 
+ 
+
+img.imgLogo{
+    width: 80%;
+    margin-left: 38px;
+    margin-top: 9px;
+    margin-bottom: -28px;   
+}
+
+
+
+h1{font-size: 2.5rem;}
+
+p{text-align: center;
+  font-size: 1.2rem;}
+}
+
+.li{
+    padding: 9px;
+}
+
+
+
+/*QUIENES SOMOS MAIN GRID*/
+
+.gridQuienesMain{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "imgHelados text";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+}   
+.imgHelados{grid-area: imgHelados;}
+.titulo{grid-area: titulo;}
+.text{grid-area: text;}
+
+/*MEDIA QUERIE QUIENES SOMOS MOBILE*/
+@media only screen and (max-width: 768px){
+
+
+body .gridQuienesMain{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "imgHelados"
+    "text";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+
+.titulo{grid-area: titulo;}
+.imgHelados{grid-area: imgHelados;}
+.text{grid-area: text;}
+
+
+}

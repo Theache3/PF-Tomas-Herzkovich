@@ -1,0 +1,43 @@
+.navbar-light .navbar-nav .nav-link{
+	color: map-get($colores, colorBlanco);
+	font-family: $fuentePrincipal;
+    transition: 1s;
+    &:hover{color: map-get($colores, colorSecundario);}
+            
+}  
+
+.nav-link:hover{
+    cursor: pointer;
+    font-size: 23px;}
+
+.li{
+    list-style-type: none;
+    padding: 24px;
+    margin: 5px;
+    font-size: 1.4rem;
+    @include font($fuentePrincipal, 20px);
+}
+
+.menu{text-decoration: none;
+  color: white;
+  transition: 1s;
+  }
+
+
+.menu:hover{
+    color: #EED950;;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+/*MEDIA QUERIE*/
+
+@media only screen and (max-width: 768px){
+
+.navbar-brand{width: 230px }
+.navbar-light .navbar-toggler{
+    color: map-get($colores, colorBlanco); 
+    background-color: map-get($colores, colorSecundario);}
+}

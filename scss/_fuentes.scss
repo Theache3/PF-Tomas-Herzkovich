@@ -1,0 +1,16 @@
+//VARIABLES
+$fuentePrincipal: 'Montserrat', sans-serif;
+$fuenteSecundaria: didoni-urw, serif;
+
+//MIXIN 
+@mixin font($fFamily, $fSize){
+	font-family: $fFamily;
+	font-size: $fSize;
+}
+
+
+h1, h4 {font-family: $fuenteSecundaria;}	
+
+p{
+  @include font($fuentePrincipal, 15px);
+}
